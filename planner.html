@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planner | Ebeh Lorietta</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Liquid glass navigation adapted from Nimbus UI Waterline. -->
+    <header>
+        <div class="glass-nav">
+            <a href="index.html" class="nav-brand">
+                <div class="brand-badge">EL</div>
+                <span>Ebeh Lorietta</span>
+            </a>
+            <nav class="nimbus-nav" aria-label="Main navigation" data-gl="off">
+                    <span class="nimbus-glass" aria-hidden="true"></span>
+                    <canvas class="nimbus-water" aria-hidden="true"></canvas>
+                    <span class="nimbus-drop" aria-hidden="true"></span>
+                    <a href="index.html" class="nimbus-item" data-page="home" data-effect="glow" aria-label="Home"><span class="nv-ico"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 11.2 12 4l8.5 7.2"/><path d="M6 9.6V20h12V9.6"/><path class="nv-door" d="M10 20v-5h4v5Z"/></svg></span><span class="nimbus-label">Home</span></a>
+                    <a href="about.html" class="nimbus-item" data-page="about" data-effect="wave" aria-label="About"><span class="nv-ico"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8.5" r="3.8"/><path d="M4.8 20c1.2-3.4 4-5 7.2-5s6 1.6 7.2 5"/></svg></span><span class="nimbus-label">About</span></a>
+                    <a href="planner.html" class="nimbus-item" data-page="planner" data-effect="drop" aria-label="Planner" aria-current="page"><span class="nv-ico"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="5" width="16" height="16" rx="3"/><path d="M8 3v4m8-4v4M4 11h16m-11 4h2m3 0h2m-7 3h2"/></svg></span><span class="nimbus-label">Planner</span></a>
+                    <a href="project.html" class="nimbus-item" data-page="projects" data-effect="spin" aria-label="Projects"><span class="nv-ico"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="7" height="7" rx="2"/><rect x="14" y="4" width="7" height="7" rx="2"/><rect x="3" y="15" width="7" height="7" rx="2"/><rect x="14" y="15" width="7" height="7" rx="2"/></svg></span><span class="nimbus-label">Projects</span></a>
+                    <a href="contact.html" class="nimbus-item" data-page="contact" data-effect="plane" aria-label="Contact"><span class="nv-ico"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.2 3.6 5.4l2.7 6.8-2.7 6.4L21 12.2Zm-14.7 0H13"/></svg></span><span class="nimbus-label">Contact</span></a>
+                </nav>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="icon-btn" type="button" aria-label="Toggle theme">
+                    <i id="theme-icon" class="fa-solid fa-moon" aria-hidden="true"></i>
+                </button>
+                <button id="mobile-menu-btn" class="icon-btn" type="button" aria-label="Toggle mobile menu" aria-controls="mobile-menu" aria-expanded="false" data-action="toggle-menu">
+                    <i id="mobile-menu-icon" class="fa-solid fa-bars" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu">
+            <nav class="nimbus-nav" aria-label="Mobile navigation" data-gl="off">
+                    <span class="nimbus-glass" aria-hidden="true"></span>
+                    <canvas class="nimbus-water" aria-hidden="true"></canvas>
+                    <span class="nimbus-drop" aria-hidden="true"></span>
+                    <a href="index.html" class="nimbus-item" data-page="home" data-effect="glow" aria-label="Home"><span class="nv-ico"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 11.2 12 4l8.5 7.2"/><path d="M6 9.6V20h12V9.6"/><path class="nv-door" d="M10 20v-5h4v5Z"/></svg></span><span class="nimbus-label">Home</span></a>
+                    <a href="about.html" class="nimbus-item" data-page="about" data-effect="wave" aria-label="About"><span class="nv-ico"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8.5" r="3.8"/><path d="M4.8 20c1.2-3.4 4-5 7.2-5s6 1.6 7.2 5"/></svg></span><span class="nimbus-label">About</span></a>
+                    <a href="planner.html" class="nimbus-item" data-page="planner" data-effect="drop" aria-label="Planner" aria-current="page"><span class="nv-ico"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="5" width="16" height="16" rx="3"/><path d="M8 3v4m8-4v4M4 11h16m-11 4h2m3 0h2m-7 3h2"/></svg></span><span class="nimbus-label">Planner</span></a>
+                    <a href="project.html" class="nimbus-item" data-page="projects" data-effect="spin" aria-label="Projects"><span class="nv-ico"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="7" height="7" rx="2"/><rect x="14" y="4" width="7" height="7" rx="2"/><rect x="3" y="15" width="7" height="7" rx="2"/><rect x="14" y="15" width="7" height="7" rx="2"/></svg></span><span class="nimbus-label">Projects</span></a>
+                    <a href="contact.html" class="nimbus-item" data-page="contact" data-effect="plane" aria-label="Contact"><span class="nv-ico"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.2 3.6 5.4l2.7 6.8-2.7 6.4L21 12.2Zm-14.7 0H13"/></svg></span><span class="nimbus-label">Contact</span></a>
+                </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="page-planner" class="page-view active">
+            <div class="section-header">
+                <span>Semester Management</span>
+                <h2>Interactive Academic Planner</h2>
+                <div class="divider"></div>
+                <p class="planner-introduction">Manage study tasks, assignment deadlines, and revision goals. Data is saved locally.</p>
+            </div>
+
+            <div class="planner-grid">
+                <!-- Task & To-Do Planner -->
+                <div class="planner-card">
+                    <div class="planner-header-flex">
+                        <h3 class="serif-heading planner-tasks-heading">Study & Project Tasks</h3>
+                        <span id="task-counter" class="task-counter">0/0 Completed</span>
+                    </div>
+
+                    <div class="task-input-group">
+                        <label for="new-task-input" class="sr-only">New academic task</label>
+                        <input type="text" id="new-task-input" placeholder="Add a new study or research task...">
+                        <button data-action="add-task" class="btn-primary task-add-btn">Add</button>
+                    </div>
+
+                    <ul id="task-list" class="task-list" aria-label="Academic tasks">
+                        <!-- Populated via JavaScript -->
+                    </ul>
+                    <p id="task-empty-state" class="asset-note">No tasks yet. Add your first task above.</p>
+                </div>
+
+                <div class="planner-card">
+                    <h3 class="serif-heading">Weekly Study Timetable</h3>
+                    <form id="study-session-form" class="session-form">
+                        <div class="session-field">
+                            <label for="session-day">Day</label>
+                            <select id="session-day" required>
+                                <option value="">Choose a day</option>
+                                <option>Monday</option><option>Tuesday</option><option>Wednesday</option>
+                                <option>Thursday</option><option>Friday</option><option>Saturday</option><option>Sunday</option>
+                            </select>
+                        </div>
+                        <div class="session-times">
+                            <div class="session-field">
+                                <label for="session-start">Start time</label>
+                                <input id="session-start" type="time" required>
+                            </div>
+                            <div class="session-field">
+                                <label for="session-end">End time</label>
+                                <input id="session-end" type="time" required>
+                            </div>
+                        </div>
+                        <div class="session-field">
+                            <label for="session-activity">Activity</label>
+                            <input id="session-activity" type="text" placeholder="What will you work on?" maxlength="200" required>
+                        </div>
+                        <button type="submit" class="btn-primary">Add Study Session</button>
+                        <p id="session-status" class="asset-note" role="status" aria-live="polite"></p>
+                    </form>
+                    <div class="table-scroll" role="region" aria-label="Study timetable" tabindex="0">
+                        <table class="study-table">
+                            <caption>Your weekly study schedule</caption>
+                            <thead><tr><th scope="col">Day</th><th scope="col">Time</th><th scope="col">Activity</th><th scope="col">Action</th></tr></thead>
+                            <tbody id="study-session-list">
+                                <tr><td colspan="4">No study sessions yet. Add one above.</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Ebeh Lorietta. Miva Open University.</p>
+    </footer>
+
+    <!-- Project Details Modal -->
+    <div id="project-modal" class="modal-overlay" data-action="close-project-overlay">
+        <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modal-title" tabindex="-1" data-action="stop-propagation">
+            <div class="modal-header-row">
+                <h3 id="modal-title" class="serif-heading modal-title">Project Title</h3>
+                <button class="modal-close-btn" aria-label="Close project details" data-action="close-project"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <p id="modal-body" class="modal-body-text">Project description and architecture details here.</p>
+            <div class="modal-actions">
+                <button data-action="close-project" class="btn-primary modal-done-btn">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification Box -->
+    <div id="toast-box" role="status" aria-live="polite">
+        <i class="fa-solid fa-circle-info"></i>
+        <span id="toast-msg">Notification message</span>
+    </div>
+
+    <!-- JavaScript Application Logic -->
+</body>
+</html>

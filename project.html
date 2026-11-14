@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Ebeh Lorietta</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Liquid glass navigation adapted from Nimbus UI Waterline. -->
+    <header>
+        <div class="glass-nav">
+            <a href="index.html" class="nav-brand">
+                <div class="brand-badge">EL</div>
+                <span>Ebeh Lorietta</span>
+            </a>
+            <nav class="nimbus-nav" aria-label="Main navigation" data-gl="off">
+                    <span class="nimbus-glass" aria-hidden="true"></span>
+                    <canvas class="nimbus-water" aria-hidden="true"></canvas>
+                    <span class="nimbus-drop" aria-hidden="true"></span>
+                    <a href="index.html" class="nimbus-item" data-page="home" data-effect="glow" aria-label="Home"><span class="nv-ico"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 11.2 12 4l8.5 7.2"/><path d="M6 9.6V20h12V9.6"/><path class="nv-door" d="M10 20v-5h4v5Z"/></svg></span><span class="nimbus-label">Home</span></a>
+                    <a href="about.html" class="nimbus-item" data-page="about" data-effect="wave" aria-label="About"><span class="nv-ico"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8.5" r="3.8"/><path d="M4.8 20c1.2-3.4 4-5 7.2-5s6 1.6 7.2 5"/></svg></span><span class="nimbus-label">About</span></a>
+                    <a href="planner.html" class="nimbus-item" data-page="planner" data-effect="drop" aria-label="Planner"><span class="nv-ico"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="5" width="16" height="16" rx="3"/><path d="M8 3v4m8-4v4M4 11h16m-11 4h2m3 0h2m-7 3h2"/></svg></span><span class="nimbus-label">Planner</span></a>
+                    <a href="project.html" class="nimbus-item" data-page="projects" data-effect="spin" aria-label="Projects" aria-current="page"><span class="nv-ico"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="7" height="7" rx="2"/><rect x="14" y="4" width="7" height="7" rx="2"/><rect x="3" y="15" width="7" height="7" rx="2"/><rect x="14" y="15" width="7" height="7" rx="2"/></svg></span><span class="nimbus-label">Projects</span></a>
+                    <a href="contact.html" class="nimbus-item" data-page="contact" data-effect="plane" aria-label="Contact"><span class="nv-ico"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.2 3.6 5.4l2.7 6.8-2.7 6.4L21 12.2Zm-14.7 0H13"/></svg></span><span class="nimbus-label">Contact</span></a>
+                </nav>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="icon-btn" type="button" aria-label="Toggle theme">
+                    <i id="theme-icon" class="fa-solid fa-moon" aria-hidden="true"></i>
+                </button>
+                <button id="mobile-menu-btn" class="icon-btn" type="button" aria-label="Toggle mobile menu" aria-controls="mobile-menu" aria-expanded="false" data-action="toggle-menu">
+                    <i id="mobile-menu-icon" class="fa-solid fa-bars" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu">
+            <nav class="nimbus-nav" aria-label="Mobile navigation" data-gl="off">
+                    <span class="nimbus-glass" aria-hidden="true"></span>
+                    <canvas class="nimbus-water" aria-hidden="true"></canvas>
+                    <span class="nimbus-drop" aria-hidden="true"></span>
+                    <a href="index.html" class="nimbus-item" data-page="home" data-effect="glow" aria-label="Home"><span class="nv-ico"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 11.2 12 4l8.5 7.2"/><path d="M6 9.6V20h12V9.6"/><path class="nv-door" d="M10 20v-5h4v5Z"/></svg></span><span class="nimbus-label">Home</span></a>
+                    <a href="about.html" class="nimbus-item" data-page="about" data-effect="wave" aria-label="About"><span class="nv-ico"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8.5" r="3.8"/><path d="M4.8 20c1.2-3.4 4-5 7.2-5s6 1.6 7.2 5"/></svg></span><span class="nimbus-label">About</span></a>
+                    <a href="planner.html" class="nimbus-item" data-page="planner" data-effect="drop" aria-label="Planner"><span class="nv-ico"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="5" width="16" height="16" rx="3"/><path d="M8 3v4m8-4v4M4 11h16m-11 4h2m3 0h2m-7 3h2"/></svg></span><span class="nimbus-label">Planner</span></a>
+                    <a href="project.html" class="nimbus-item" data-page="projects" data-effect="spin" aria-label="Projects" aria-current="page"><span class="nv-ico"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="7" height="7" rx="2"/><rect x="14" y="4" width="7" height="7" rx="2"/><rect x="3" y="15" width="7" height="7" rx="2"/><rect x="14" y="15" width="7" height="7" rx="2"/></svg></span><span class="nimbus-label">Projects</span></a>
+                    <a href="contact.html" class="nimbus-item" data-page="contact" data-effect="plane" aria-label="Contact"><span class="nv-ico"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.2 3.6 5.4l2.7 6.8-2.7 6.4L21 12.2Zm-14.7 0H13"/></svg></span><span class="nimbus-label">Contact</span></a>
+                </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="page-projects" class="page-view active">
+            <div class="section-header">
+                <span>Customer Experience in Action</span>
+                <h2>Projects &amp; Case Studies</h2>
+                <p class="asset-note">How I approach customer challenges through empathy, investigation, and case ownership.</p>
+                <div class="divider"></div>
+            </div>
+
+            <div class="projects-grid" id="projects-grid">
+                <article class="project-card case-study" aria-labelledby="app-access-title">
+                    <div class="project-top-row">
+                        <span class="project-category-tag">Technical Support</span>
+                        <span class="project-date">Case Study 01</span>
+                    </div>
+                    <h3 id="app-access-title">Investigating a Device-Specific App Access Issue</h3>
+                    <p>FairMoney &middot; Customer Service</p>
+                    <section aria-labelledby="app-challenge">
+                        <h4 id="app-challenge">The Challenge</h4>
+                        <p>A customer reported being unable to access the FairMoney app on their mobile device, although they could successfully access it using another person's device. This suggested a device-specific issue requiring technical investigation.</p>
+                    </section>
+                    <section aria-labelledby="app-approach">
+                        <h4 id="app-approach">My Approach</h4>
+                        <ol class="content-list">
+                            <li>Requested a screen recording showing the error encountered while accessing the app.</li>
+                            <li>Collected details about the customer's mobile device.</li>
+                            <li>Identified and escalated the issue to the appropriate technical team, providing the recording and device information.</li>
+                            <li>Followed up with the team and communicated progress updates to the customer via email to manage expectations.</li>
+                        </ol>
+                    </section>
+                    <section class="case-outcome" aria-labelledby="app-outcome">
+                        <h4 id="app-outcome">The Outcome</h4>
+                        <p>Provided the technical team with relevant evidence to investigate the issue while maintaining clear communication with the customer throughout the escalation process.</p>
+                    </section>
+                    <section aria-labelledby="app-skills">
+                        <h4 id="app-skills">Skills Demonstrated</h4>
+                        <ul class="case-skills">
+                            <li class="tag">Technical Troubleshooting</li>
+                            <li class="tag">Escalation Management</li>
+                            <li class="tag">Cross-functional Collaboration</li>
+                            <li class="tag">Customer Communication</li>
+                            <li class="tag">Case Ownership</li>
+                        </ul>
+                    </section>
+                </article>
+
+                <article class="project-card case-study" aria-labelledby="kyc-title">
+                    <div class="project-top-row">
+                        <span class="project-category-tag">KYC &amp; Account Support</span>
+                        <span class="project-date">Case Study 02</span>
+                    </div>
+                    <h3 id="kyc-title">Resolving a Delayed Account Upgrade Verification</h3>
+                    <p>FairMoney &middot; Customer Service</p>
+                    <section aria-labelledby="kyc-challenge">
+                        <h4 id="kyc-challenge">The Challenge</h4>
+                        <p>A customer contacted support regarding a delay in their account upgrade. They explained that they had uploaded their utility bill several weeks earlier, but it was yet to be verified.</p>
+                    </section>
+                    <section aria-labelledby="kyc-approach">
+                        <h4 id="kyc-approach">My Approach</h4>
+                        <ol class="content-list">
+                            <li>Empathised with the customer and acknowledged the inconvenience caused by the delay.</li>
+                            <li>Collected the necessary details and reviewed the customer's profile using the CRM tool.</li>
+                            <li>Confirmed that the uploaded utility bill matched the address registered on the account and met the recency and document requirements.</li>
+                            <li>Informed the customer that verification would be completed within 24 working hours.</li>
+                            <li>Escalated the case to the KYC team and followed up until verification was completed.</li>
+                            <li>Notified the customer once their utility bill had been successfully verified.</li>
+                        </ol>
+                    </section>
+                    <section class="case-outcome" aria-labelledby="kyc-outcome">
+                        <h4 id="kyc-outcome">The Outcome</h4>
+                        <p>The customer's utility bill was verified, and the customer was updated on the successful completion of the process.</p>
+                    </section>
+                    <section aria-labelledby="kyc-skills">
+                        <h4 id="kyc-skills">Skills Demonstrated</h4>
+                        <ul class="case-skills">
+                            <li class="tag">Customer Empathy</li>
+                            <li class="tag">KYC Verification</li>
+                            <li class="tag">CRM Management</li>
+                            <li class="tag">Attention to Detail</li>
+                            <li class="tag">Escalation Management</li>
+                            <li class="tag">Case Ownership</li>
+                        </ul>
+                    </section>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Ebeh Lorietta. Miva Open University.</p>
+    </footer>
+
+    <!-- Project Details Modal -->
+    <div id="project-modal" class="modal-overlay" data-action="close-project-overlay">
+        <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modal-title" tabindex="-1" data-action="stop-propagation">
+            <div class="modal-header-row">
+                <h3 id="modal-title" class="serif-heading modal-title">Project Title</h3>
+                <button class="modal-close-btn" aria-label="Close project details" data-action="close-project"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <p id="modal-body" class="modal-body-text">Project description and architecture details here.</p>
+            <div class="modal-actions">
+                <button data-action="close-project" class="btn-primary modal-done-btn">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification Box -->
+    <div id="toast-box" role="status" aria-live="polite">
+        <i class="fa-solid fa-circle-info"></i>
+        <span id="toast-msg">Notification message</span>
+    </div>
+
+    <!-- JavaScript Application Logic -->
+</body>
+</html>
