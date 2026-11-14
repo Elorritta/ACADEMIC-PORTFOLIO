@@ -14,7 +14,7 @@ Open index.html, or serve this folder with `python -m http.server 8765`.
 
 ## Personalise before submission
 
-The portfolio uses Ebeh Lorietta, Software Engineering / 100 Level, and the supplied customer experience biography. Fill in the university and contact placeholders. Review the suggested career aspirations. The supplied portrait is saved in assets/images/ebeh-lorietta.jpeg. Replace sample project concepts and links with your work. Skills, hobbies, and timetable entries are examples.
+The portfolio uses EBEH Lorritta, Software Engineering / 100 Level, and the supplied customer experience biography. Fill in the university and contact placeholders. Review the suggested career aspirations. The supplied portrait is saved in assets/images/ebeh-lorietta.jpeg. Replace sample project concepts and links with your work. Skills, hobbies, and timetable entries are examples.
 
 The contact form validates details and submits messages to https://formspree.io/f/mbgodvrb. It displays submission status and preserves entries if sending fails. Planner tasks, study sessions, and the selected theme are saved in browser storage when available. Fonts and icons require internet access; the personal portrait and project illustrations are local.
 
